@@ -3,10 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Our Site</title>
+    <style>
+        /* CSS 样式写在这里 */
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #00bcd4 3px solid;
+        }
+        
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        
+        header ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            background: #333;
+        }
+        
+        header li {
+            float: left;
+        }
+        
+        header li a {
+            padding: 20px;
+        }
+        
+        header li a:hover {
+            background-color: #4CAF50;
+        }
+        
+        .hero {
+            background: #34495e;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 3em;
+        }
+        
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #00bcd4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #007c91;
+        }
+        
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .section p {
+            font-size: 1.2em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
+    <!-- HTML 结构写在这里 -->
     <header>
         <div class="container">
             <h1>Welcome to Our Site</h1>
@@ -29,21 +132,21 @@
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
             <p>Learn more about our company and what we do...</p>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="section">
         <div class="container">
             <h2>Our Services</h2>
             <p>Discover the services we provide...</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact Us</h2>
             <p>Get in touch with us...</p>
